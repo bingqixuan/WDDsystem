@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, FiveBigRoadActivity!</string>
+    <string name="app_name">FiveBigRoad</string><string name="menu_settings">Settings</string>
+    <string name="choosedrawtype">选择标绘方式</string>
+    <string name="urlImage">http://10.5.84.254:6080/arcgis/rest/services/Image/MapServer</string>
+    <string name="urlImage4326">http://10.5.84.254:6080/arcgis/rest/services/Image4326/MapServer</string>
+    <string name="urlStandard">http://10.5.84.254:6080/arcgis/rest/services/standard/MapServer</string>
+    <string name="urlVec4326">http://10.5.84.254:6080/arcgis/rest/services/L_814_4326/MapServer</string>
+    <string name="urlVec102100">http://10.5.84.254:6080/arcgis/rest/services/L_814_102100/MapServer</string>
+      <string-array name="drawtypes_array">
+        <item>Point</item>
+        <item>Polyline</item>
+        <item>Polygon</item>
+    </string-array>
+    
+</resources>

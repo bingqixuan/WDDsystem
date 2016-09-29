@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".Gis01Activity" >
+
+    <!-- MapView layout and initial extent -->
+
+    <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        initExtent = "1.3046503030158248E7 4737579.482126956 1.3046954576004818E7 4737718.748357644">
+    </com.esri.android.map.MapView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" 
+        >
+
+        <EditText
+            android:id="@+id/condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08" />
+
+        <Button
+            android:id="@+id/btnQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnMArea"
+            android:layout_toRightOf="@+id/btnMArea"
+            android:text="查询" 
+          
+            />
+    </LinearLayout>
+
+    <!-- initExtent = "117.179094851017, 39.0968120098114, 117.21989393234253, 39.12498861551285" -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="150dp"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:background="#cccccc"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinnerDrawType"
+            style="?android:attr/spinnerDropDownItemStyle"
+            android:layout_width="100dip"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@+id/TextView01"
+            android:prompt="@string/choosedrawtype"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="标绘方式"
+            android:textColor="#000000"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_toRightOf="@+id/linearLayout2" >
+
+        <Button
+            android:id="@+id/btnMArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_toRightOf="@+id/linearLayout2"
+            android:layout_weight="1"
+            android:text="测面积" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/btnMArea"
+            android:layout_toRightOf="@+id/btnMArea"
+            android:layout_weight="1"
+            android:text="清除" />
+
+        <Button
+            android:id="@+id/btnMlength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:text="测距" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonZoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/main_icon_zoomout" />
+
+    <Button
+        android:id="@+id/buttonZoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonZoomOut"
+        android:background="@drawable/main_icon_zoomin" />
+
+    <Button
+        android:id="@+id/btnGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonZoomIn"
+        android:background="@drawable/topbar_view_map"
+       />
+
+    <Button
+        android:id="@+id/btnGogis02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnGPS"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/icon_route_right_arrow"
+        android:text=" 路径分析" />
+
+</RelativeLayout>

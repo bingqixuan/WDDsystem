@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="70dp"
+        android:background="#EEEFFF" />
+
+  <com.esri.android.map.MapView
+      android:id="@+id/map"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_alignParentBottom="true"
+      android:layout_toLeftOf="@+id/Button03" >
+        
+    </com.esri.android.map.MapView>
+
+  <Button
+      android:id="@+id/Button02"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:text="  导    航" />
+
+  <Button
+      android:id="@+id/Button01"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/Button02"
+      android:layout_alignParentRight="true"
+      android:text="  导    航" />
+
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/Button01"
+      android:layout_alignParentRight="true"
+      android:text="  导    航" />
+
+  <Button
+      android:id="@+id/Button03"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/button1"
+      android:layout_alignParentRight="true"
+      android:text="缓 冲 区" />
+
+  <Button
+      android:id="@+id/Button05"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/Button03"
+      android:layout_alignParentRight="true"
+      android:text="测 面 积" />
+
+  <Button
+      android:id="@+id/Button04"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/Button05"
+      android:layout_alignParentRight="true"
+      android:text="  测     距" />
+
+  <Button
+      android:id="@+id/Button06"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/Button04"
+      android:layout_alignParentRight="true"
+      android:text="  离     线" />
+
+</RelativeLayout>

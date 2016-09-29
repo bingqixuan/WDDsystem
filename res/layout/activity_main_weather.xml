@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:background="@drawable/weather03"
+    >
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnGetWeather"
+        android:text="" 
+        android:textColor="#000033"
+        android:textSize="16dp"
+         android:layout_alignParentTop="true"
+    android:layout_marginTop="100dp"
+        />
+
+<TextView
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/btnGetWeather"
+    android:layout_alignParentLeft="true"
+    android:text="      查 看 天 气 请 点 击 天 图 标
+  出 行 请 关 注 天 气 哦"
+    android:textColor="#FF6666"
+    android:textSize="20dp" 
+     android:layout_alignParentTop="true"
+    android:layout_marginTop="20dp"
+    />
+
+    <Button
+        android:id="@+id/btnGetWeather"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/weather" />
+
+</RelativeLayout>

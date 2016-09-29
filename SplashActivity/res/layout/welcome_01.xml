@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guide4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/guide_map4">
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/icon_route_right_arrow"
+        android:gravity="center"
+        android:text="马  上  体  验"
+        android:textColor="#FF0066" />
+ 
+</RelativeLayout>

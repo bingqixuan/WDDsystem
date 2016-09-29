@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".FiveBigRoadActivity" >
+
+       <com.esri.android.map.MapView
+           android:id="@+id/map"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentTop="true" >
+
+    </com.esri.android.map.MapView>
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/component_radar_cat_light_bg"
+            android:text="切 换" />
+
+        <Button
+            android:id="@+id/btnZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnConvert"
+            android:layout_alignBottom="@+id/btnConvert"
+            android:layout_toLeftOf="@+id/btnConvert"
+            android:background="@drawable/main_icon_zoomout" />
+
+        <Button
+            android:id="@+id/btnZoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnZoomOut"
+            android:layout_alignBottom="@+id/btnZoomOut"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/btnZoomOut"
+            android:background="@drawable/main_icon_zoomin" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/btnConvert"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnGotoWeather"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnZoomIn"
+            android:background="@drawable/weather" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/btnZoomIn"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnGotoWeather"
+            android:layout_toRightOf="@+id/label"
+           
+            android:editable="true"
+          android:background="#ffffff"
+            android:text="请输入"
+            android:textColor="#FF6666" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/btnGogis01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="gis01"
+            android:textColor="#FF6666"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnGoLixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="离 线"
+            android:textColor="#FF6666"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:text="分享"
+            android:textColor="#FF6666"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>
