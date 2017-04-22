@@ -1,3 +1,10 @@
 # WDDsystem
-this is an android app based on arcgis4android
+
+大学期间参加esri开发竞赛的移动端作品,是一款旅游辅助系统，为去五大道旅游的小伙伴提供便利，最终作品获得优胜奖。我主要负责其中的空间分析、地图发布等部分。
+
+开发框架：arcgis for android
+
+地图发布：arcgis server
+
+主要实现功能：点、线、面测量及编辑，位置定位，路径分析，缓冲区分析，离线地图，天气预报
 
